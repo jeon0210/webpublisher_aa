@@ -7,7 +7,7 @@
   <title>웹기초 -기본 코드 내용</title>
 
   <!-- link:favicon -->
-  <link rel="shortcut icon" href="../icon_01.jpg" type="image/png">
+  <link rel="shortcut icon" href="../img/icon_01.jpg" type="image/png">
 
   <!-- link:touch -->
   <link rel="apple-touch-icon" href="../img/icon_01.png">
@@ -62,9 +62,9 @@
   </pre>
 </div>
 
-<div class="shadow_box margin_top">
+<div class="shadow_box">
 <q>q요소는 인용문의 형태를 의미, 한줄의 내용을 작성하는 경우에 주로 사용</q> <br />
-</div>
+
   
 <blockquote cite="인용내용의 원본첨부">
   
@@ -85,7 +85,9 @@
   <p>사업자번호</p>
   <p>연락처...</p>
 </address>
+</div>
 
+<div class="shadow_box margin_top">
 <!-- 내용2 : 크기를 가질 수 없는 inline 요소들에 대한 내용-->
 <p>
   내용을 작성할때에는, 때로 강조를 하고자 할 때도 있다. <br />
@@ -109,8 +111,11 @@
   내용상 용어를 사용할 경우, 우리는 요약형태를 사용하는 경우가 많다 <br />
   <abbr title="버스카드충전">버카충</abbr>,
   <abbr title="hiper text markup language">html</abbr>
+  
 
 </p>
+
+</div>
 
  <!-- 
    제목: h1~h6
@@ -126,7 +131,7 @@
   
 -->
 
-<div>
+<div class="shadow_box">
   <h2>목록의 형태 파악</h2>
    <!-- 목록 (나열) 3가지
   순서가 없는 형태 (리스트) - unorder list -> ul (자식으로: li만 첨부)
@@ -169,25 +174,40 @@
 <div>
    <h2>여러 중첩 처리되는 리스트 형식</h2>
    <ul>
-     <li>콘스트 명 : 싸이 흠뻑쑈!!
+     <li>
        <dl>
          <dt>콘서트명</dt>
-         <dl>싸이 흠뻑쑈</dl>
+         <dd>싸이 흠뻑쑈</dd>
        </dl>
      </li>
-     <dl>
-       <dt>부제</dt>
-       <dd>나도 가보고 싶다! 흠뻑쇼</dd>
-       <dd>그래서 준비했습니다. 온라인으로 참석하세요.</dd>  
+     <li>    
+        <dl>
+         <dt>부제</dt>
+         <dd>나도 가보고 싶다! 흠뻑쇼</dd>
+         <dd>그래서 준비했습니다. 온라인으로 참석하세요.</dd>  
      </dl>
-    <li>부제명 : 나도 가보고 싶다! 흠뻑쇼</li>
-    <li>날짜 : 2020년 9월 18일</li>
-    <li>시간 : 오후 11시 (1부, 2부)</li>
-    <li>채널 : <abbr title="seoul broadcast system">SBS</abbr> 방송</li>
+    </li>
+
+    <li>
+       <dl>
+         <dt>일시</dt>
+         <dd>2020년 9월 18일</dd>
+         <dd>저녁 11시</dd>
+         <dd>
+           <ol>
+             <li>1부: 신나게 즐겨보기</li>
+             <li>2부: 미친듯 정줄놓기</li>
+           </ol>
+           </dd>
+           </dl>
+          </li>
+
+   <li>
     <dl>
       <dt>채널</dt>
       <dd><abbr title="seoul broadcast system">SBS</abbr> 방송</dd>
     </dl>
+    </li>
    </ul>
 </div>
 
