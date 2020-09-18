@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* selector_01.css */
+
+body{background-color:#fafafa;}
+
+h1 {width:400px; height:40px; background-color:#fca;}
+ul > li { border-width:1px; border-style:solid; border-color:#f7a;}
+ol > li { background-image:linear-gradient(#cfa, #ca7);}
+
+a{background-color:#333; color:#fff;}
+li div > a { color:#ff0;}
+
+
+.wrap { width:80%; background-color: #ccc; border:2px solid #7fa;}
+#outer { background-color:#ff8;}
+
+/* css선택자는 기본 : 나중에 작성한 내용을 기준으로 처리
+   하지만, 기본 타입선택자보다는 < class선택자가 우선 < id선택자 < 자손 또는 자식 선택자가 우선 < 인라인 서낵자 (js를 통한)
+
+   타입 1점
+   class 100점
+   id선택자 500점
+   자손/자식선택자 1000점
+*/
+
+.nth {width:100px; height:auto;}
+.nth > li:nth-child(2n - 1) {background-color:#ccc;}
+
+
+01
+02
+03
+04
