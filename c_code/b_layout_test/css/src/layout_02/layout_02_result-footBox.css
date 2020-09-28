@@ -1,0 +1,7 @@
+/* #footBox============= */
+#footBox {margin-bottom:500px; height: auto; padding:25px 0 30px; background-color: #aaa;}
+.foot_outer{ width: 1300px; height: 140px; margin:auto; background-color: var(--step2-color); }
+
+.foot_outer > div {float:left; width: 650px; height: 140px; background-color: #fff;}
+.foot_outer > div:last-child {float:right; width: 325px; height: 70px;
+  margin:35px 0; background-color: #bbb;}

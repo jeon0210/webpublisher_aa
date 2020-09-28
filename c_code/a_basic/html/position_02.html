@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- position_02.html -->
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+<link rel="stylesheet" href="../css/src/position_02.css">
+<title>Document</title>
+<link rel="stylesheet" href="../img/icon_01.jpg" type="image/png">
+<link rel="apple-touch-icon" href="../img/icon_01.png">
+</head>
+<body>
+<!-- layout -->
+
+<div id="wrap">
+
+ <div id="headBox">
+  <h1><a href="./content.html">웹기초</a></h1>
+ </div>
+<div id="sideBox">
+  <div class="sample_fixed">한쪽으로 치우쳐져있는 요소의 위치</div>
+</div>
+
+<div class="modal_window">
+ <div class="modal_message">
+   <h3>message</h3>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore nam consequatur necessitatibus laboriosam enim iure officia aspernatur maxime sequi vel rem nemo in officiis, quis vero iste autem eveniet reprehenderit.</p>
+
+ </div>
+</div>
+ <div class="side">우측에붙이기</div>
+
+ <!-- ========================================== -->
+<!-- ad or banner 사용하지말긔
+<div id="banner"> role=banner식으로 사용 되지만 가급적
+  충돌이 일어날 수 있기 때문에 사용 안하긔 -->
+ <div id="viewBox">
+ <h2>광고영역</h2>
+ <div class="view_indicator">인디케이터</div>
+
+
+ <!-- btn한번 더 감싸주는 걸로 수정 버튼 태그를 주어 버튼 모양 -->
+ 
+ <div class="view_btn">
+
+ <button type="button" class="next_btn">
+   <span class="hidden">다음</span>
+  <i class=""></i>
+  </button>
+ <button type="button" class="prev_btn">
+  <span class="hidden">이전</span>
+  <i class=""></i></button>
+ </div>
+
+
+ <div class="view_area">
+  <div class="adv_01">adv_01</div>
+  <div class="adv_02">adv_02</div>
+  <div class="adv_03">adv_03</div>
+  <div class="adv_04">adv_04</div>
+  <div class="adv_05">adv_05</div>
+ </div>
+
+
+ 
+ <!-- ========================================== -->
+
+</div>
+
+
+
+
+</div> <!-- //wrap -->
+
+<!-- script -->
+<script src="http://unpkg.com/jquery"></script>
+
+<script>
+  // script 구역 나눠써주깅
+  // console.log($.fn);
+  /*$('.modal_message').on('click', function(){
+    $('.modal_window').slideUp(300);
+  });*/
+
+  var msg = document.getElementsByClassName('modal_message')[0];
+  var mwn = document.getElementsByClassName ('modal_window')[0];
+
+  msg.addEventListener('click', function() {
+    mwn.style.display ='none';
+  });
+</script>
+</body>
+</html>

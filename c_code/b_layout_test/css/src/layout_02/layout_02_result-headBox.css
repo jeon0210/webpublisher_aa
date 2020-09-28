@@ -1,0 +1,32 @@
+/* #headBox======== */
+#headBox { position: relative;
+  height: 150px; padding:34px 50px 0; box-sizing:border-box; background-color: #ddd;}
+
+.main_heading { 
+  float:left; width:250px ; height: 80px; margin-right:75px;
+  background-color:var(--step2-color);} 
+
+
+  .navigation {position: absolute; left: 50%; transform: translate(-50%);
+    top: 34px; 
+  /* float:left; */
+   width: 850px; height: auto;  
+  background-color:var(--step2-color);} 
+.navigation > ul { width: 100%; height: auto;}
+
+/* .navigation > ul:after, 
+.navigation > ul::after {content:""; display:block; clear:both;}
+clear:fix를 미리 설정하고 사용하여 쉽게 클리어보스 처리 가능 */
+
+.navigation li {float:left; width: 150px; height: 70px;
+margin:5px 10px; background-color: #dad;}
+/* 네비게이션 플로트 li도 플로트/ ul의 높이값을 만들 수 있게 에프터 처리?
+ul에 클리어보스 처리를 하지 않으면 ul아래 글씨를 적었을때 글자만남고 박스는 사라질 수 있다.
+왜냐면 ul의 높이가 없으니깐 ul의 높이를 주는건 밑에 나오는 글씨를 주고 할 수 있으니깐
+눈에 보이기엔 차이가 없지만 이후 오는 아이들의 기능을 써주기위해 처리  필요 */
+
+
+
+.member {
+  float:right; width:250px ; height: 80px;
+   background-color: var(--step2-color);} 

@@ -1,0 +1,8 @@
+/* #miniAdBox========= */
+#miniAdBox { height: auto; margin-bottom:80px; padding:40px 0; background-color: #bbb;}
+.mini_ad_outer{ width: 1500px; height: 300px; margin:auto; background-color: var(--step2-color);}
+
+.mini_ad_outer > div {float:left; width: 350px; height: 300px;
+  margin-right:25px; background-color: #fff; }
+.mini_ad_outer > div:first-child{width: 750px;}
+.mini_ad_outer > div:last-child{margin-right:0;}
